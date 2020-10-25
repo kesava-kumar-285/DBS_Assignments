@@ -1,0 +1,100 @@
+
+
+
+Assignment ==== Kesava Kumar
+1) git branch : A branch is a version of the repository that diverges from the main working project.
+    to create branch ====> git branch <branchname>
+    to show all branches ====> git branch
+    to get into the branch ====> git checkout <branchname>
+
+2) git checkout : This command used to get into the the particular branch
+     command : git checkout <branchname>
+
+3) merge : this command is used to merge the main barnch with the other branches created.
+   when the mainbranch is merged with the other branch the files which are in the other branched can be accessable from the main branch
+     command : git merge <branchname1> <branchname2>
+
+4) git ignore : This command makes the files not to add into the staging area if we create the .gitignore file and added it.
+    as the files are not allowed to add in the staging area they cannot be push to repository.
+     command : touch .gitignore
+             git add .gitignore
+             git commit -m ".gitignore is added"
+             git add <filename> =====> this cannot be added.
+
+5) git push : This command is used to push the files to the github repository that are in the staging area after commiting.
+    command : git push
+
+6) git stash : This command is used to removes the file from the staging area and from local directory and can be restored back.
+     command : git stash
+               git stash apply ====> to restore the file
+
+7) git head : This command is used to show the id of the commit that is done with file.
+     command : git show head
+
+8) git pull : This is used to pull the file that are in the github to the local directory
+     command : git pull
+9) git remote : It's used whenever any remote server interaction happens.  
+     command :  git remote -v ====> to list out remote server locations
+	        git remote add servername URL ====>Specifies which server URL we want to interact
+	        
+10) git revert : Any committed changes can be reverted back to previous one by specifying previous head-id.
+    command : git revert < head id > 
+
+11) git tag : We can tag a particular point in branch by assigning versions. Later we can go to any tag and can see that version file's status.
+     command : git tag < version number > ====> to assign the version number
+               git tag ====> to display all the versions
+               git show < version number > 
+12) git mv : This command renames file name both in git and local folder.
+      command : git mv current_name final_name
+
+13) git init : Initializes any folder as git folder. Adds some hidden files which tracks every changes happened in this local repo.
+      command : git init
+14) git add : Adds files from local folder to staging area.
+      command : git add < file name >
+
+15) git commit : Commits all changes uploaded from staging area to repo which can finally be pushed to hosting site.
+      command : git commit -m  "comment on commit something"
+
+16) git clone : Clones specified repo present in given URL to your local system. Any chnges to cloned folder then can be used like normal git folders.
+      command : git clone < github path >
+
+17) git restore : Moves files which are still present in staging area back to local folder.
+      command : git restore --staged < file name >
+
+18) git diff : Tells difference between local folder files and committed repository.
+      command : git diff
+
+19) git log : It will list all commits with headposition,timestamp, comments given while committing.
+      command : git log
+
+20) git status : It will show current status of files in local repo which are staged but uncommitted, or not tracked, or need to be staged(due to modification or new file).
+      command : git status 
+
+21) Environment setup
+    A one time setup to hosting site account where you want to save repo. Itr can be made as global or local change
+    To setup username: git config --global user.name "user_name"
+    To setup email: git config --global user.email "email_id"
+
+22) Local repo: Repository which is local to your system. We can make any repo as git local repo by git init. But this one is good for single user.
+    Centralized repo: Works with multiple users(Good for collaboration) where every data is stored at single site. It's to manage but faces single point of failure problem.  
+    Distributed repo: It removes drawback of centralized repo but have it's own problem like syncing. Repo can be maintained at local repo and metadata like no. of files, timestamp, etc 
+    can be saved at server. It's scalable and more secure as backup point of view.
+
+23) Git VCS feature:
+    ====> Distributed  
+    ====> Traceability
+    ====> Scalable
+    ====> Secured
+    ====> Fast
+
+24) Version control system is used for tracking every development of software and maintain every version in proper way without disturbing main working version.
+    benefits are : tracebility, distributed, scalable, secured, fast.
+
+
+25) Index file is a hidden file automatically created after git init. It maintains some internal data structure to track changes in local git folder.
+  Modified files storage?? May be using some tree/graph data structure. 
+
+
+ 
+ 
+ 
