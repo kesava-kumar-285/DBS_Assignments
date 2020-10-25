@@ -1,0 +1,158 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<div class="text-center">
+
+<u><h2 style="padding-top: 20px;">The Training of Angular (Assignment)</h2><br><br></u>
+<div class="container">
+  <div class="watch">
+<h2>Current Date : {{today }}</h2>
+<h2>Current Time : {{d}}</h2>
+<h2>Current Date Format : {{today | date:'shortDate'}}</h2>
+</div>
+</div>
+<br>
+<!-- <div class="container"> 
+<div class="btn-toolbar"> 
+<button type="button"(click)="getDate()">Date</button> -->
+<!-- <p>{{dated}}</p> -->
+
+<!-- <button type="button" (click)="getTime()">Time</button> -->
+<!-- <p>{{time}}</p> -->
+
+<!-- <button type="button" (click)="getDateFormate()">Date</button> -->
+
+<!-- </div> 
+</div> -->
+
+<div class="container"> 
+  <div class="text-center"> 
+    <img src="../assets/dateandtime.jpg" alt="" style="height: 180px;width: 180px;">&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-success"(click)="getDate()">Date & Time</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="../assets/time.jpg" alt="" style="height: 180px;width: 180px;"> &nbsp;&nbsp;&nbsp;&nbsp; <button type="button" class="btn btn-success"(click)="getTime()">Current Time</button>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img src="../assets/date.jpg" alt="" style="height: 180px;width: 180px;"> &nbsp;&nbsp;&nbsp;&nbsp; <button type="button" class="btn btn-success"(click)="getDateFormate()">Date</button> 
+      <h2>{{dated}}</h2>
+      <h2>{{dated}}</h2>
+      <h2>{{time}}</h2>
+    </div>
+</div>
+<!-- <table> -->
+<!-- <tr class="btn-group" *ngFor="let button of buttonData; i = index">
+  <td>
+   <button (click)="onButtonTitleClicked(i)">
+     {{button.title}}
+     <ng-template *ngIf="isButtonTitleClicked[i]">
+        <p>{{button.description}}</p>
+        <img src="{{button.img}}">
+     </ng-template>
+   </button>
+  </td>
+ </tr>
+</table> -->
+<!-- 
+<div class="btn-group" *ngFor="let button of buttonData">
+
+  <button (click)="onButtonTitleClicked()">{{button.title}}</button>
+
+</div> -->
+
+<br>
+  <div class="container1">
+  <!-- <u><h4 style="margin-left: -800px;">CRUD In Form</h4></u> -->
+  <legend style="
+    background-color: gray;
+    color: white;
+    padding: 5px 10px;
+  ">CRUD In Form</legend>
+    <form (ngSubmit)="onAdddetails(f)" #f="ngForm">
+      <label> <h4 >ID</h4> </label>
+      <input type="number" ngModel  name="id" placeholder="ID" required> 
+
+      <label> <h4 >First Name</h4> </label>
+      <input type="text" ngModel  name="firstname" placeholder="First Name" required>
+  
+      <label for="lname"> <h4>Last Name</h4></label>
+      <input type="text" ngModel name="lastname" placeholder="Last Name" required>
+  
+      <label for="lname"> <h4>Email</h4></label>
+      <input type="text" ngModel name="email" placeholder="Email" required>
+
+      <button class="btn btn-success" [disabled]="!f.valid">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;
+      <button class="btn btn-danger" (click)="onDelete()">Delete</button>&nbsp;&nbsp;&nbsp;&nbsp;
+      <button class="btn btn-primary" (click)="onEdit(f)">Edit</button>
+    </form>
+  </div>
+  <br>
+</div>
+<div class="row">
+  <div class="col-xs-10">
+      <!-- <app-shopping-edit></app-shopping-edit> -->
+      <hr>
+      <table class="list-group table table-bordered table-hover">
+        <tr style="margin-left: 500px;">
+          <th>S.NO</th>
+          <th>Name</th>
+          <th>Dept</th>
+          <th>Destination</th>
+        </tr>
+          <a class="list-group-item" style="cursor: pointer; margin-left:480px; color: #000;"
+          *ngFor="let detail of details ; let i = index">
+          
+          <tr>
+            <th>{{ detail.id}}</th>
+            <th>{{ detail.firstname }} </th>
+            <th>{{ detail.lastname }} </th>
+            <th>{{ detail.email }} </th>
+          </tr>
+          </a>
+          <!-- <h4 >{{ detail.id}}  {{ detail.firstname }}   {{ detail.lastname }}   {{ detail.email }}</h4></a> -->
+      </table>
+  </div>
+</div>
+
+
+<div class="container2" >
+<u><h4>Math Operations</h4><br><br></u>
+<h4> 100 + 80 = {{sum}}</h4>
+<h4> 100 - 80 = {{sub}}</h4>
+<h4> 100 * 80 = {{mult}}</h4>
+<h4> 100 / 80 = {{div}}</h4>
+<h4> 100 % 80 = {{rem}}</h4>
+
+</div>
+<br>
+<div class="container3" >
+  <div class="text-center">
+
+
+<h4>Number 1     <input type="number" [(ngModel)]="num1" style="max-width: 80px;">      Number 2   <input type="number" [(ngModel)]="num2" style="max-width: 80px;"><br></h4> 
+
+<h4>{{sum1}}</h4> <br><br>
+<button class="btn btn-success" (click)=onAdd()>Add</button>&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="btn btn-success" (click)=onSub()>Subtract</button>&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="btn btn-success" (click)=onMul()>Multiply</button>&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="btn btn-success" (click)=onDiv()>Divide</button>&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="btn btn-success" (click)=onRem()>Remainder</button>
+</div>
+</div>
+<br>
+<div class="container1">
+  <div class="text-center" style="max-width: 800px;margin-left: 100px;">
+    <h4> Message from parent to child</h4>
+<input type="text "style="  width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+margin-top: 6px;
+margin-bottom: 16px;
+resize: vertical;" [(ngModel)]="Message" />
+<br>
+<h4>{{Message}}</h4>
+</div>
+</div>
+<br>
+<div class="container1">
+<app-new-cmp (myOutput)="MessageFromChild($event)"></app-new-cmp>
+</div>
