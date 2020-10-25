@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+          "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+          "http://www.jboss.org/dtd/hibernate/hibernate-mapping-3.0.dtd">
+          
+<hibernate-mapping>
+	<class name="first.Insurance" table="insurance">
+		<id name="id" type="int" column="id"></id>
+		<property name="name" column="name" type="string"/>
+		<property name="tenure" column="tenure" type="int"/>
+		<property name="amount" column="amount" type="int"></property>
+	</class>
+</hibernate-mapping>
