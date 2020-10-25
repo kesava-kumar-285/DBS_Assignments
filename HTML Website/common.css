@@ -1,0 +1,29 @@
+button{
+	align-content: right;
+}
+
+i.ex:hover{
+	color: red
+}
+
+
+.carousel-control-next-icon:after
+{
+  font-size: 25px;
+  color: black;
+}
+
+.carousel-control-prev-icon:after 
+{
+  font-size: 25px;
+  color: black;
+}
+
+.carousel-control-next,
+.carousel-control-prev{
+	width:10%;
+}
+
+.slides{
+	align-content: center;
+}

@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(wp4021278.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .topnav-text{
+      text-align : center;
+      margin-left : 300px;
+      color :white; 
+      font-weight: bold;
+  }
+  
+  .topnav-ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    .topnav-ul li {
+      float: left;
+    }
+    .topnav a{
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        float:left;
+    }
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover {
+      background-color: #111;
+      z-index: 1;
+    }
+    
+    
+  .content {
+    background-image:  ;
+    padding: 10px;
+  }
+  
+  .logo {
+    display: inline-block;
+      vertical-align: top;
+      width: 20px;
+      height: 20px;
+      float : left;
+      margin-top: 1px; 
+  }
+  
+  #slider{
+      width:100%;
+      height:500px;
+      position:relative;
+      overflow:hidden;
+      z-index: -1;
+    }
+    .slides{
+      width:400%;
+      height:100%;
+      position:relative;
+    }
+  
+    .slider{
+      width:25%;
+      height:100%;
+      float:left;
+      position:relative;
+      z-index:1;
+      overflow:hidden;
+    }
+  
+    .slide img{
+      width:100%;
+      height:100%;
+      z-index: -1;
+    }
+    .image{
+      width:100%;
+      height:100%;
+    }
+    .image img{
+      width:100%;
+      height:100%;
+    }
+  
+   .hr-break{
+     margin-left: 300px;
+     
+   }
+   marquee{
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 8px;
+    }
+    .pop{
+      margin-left: 450px;
+    }
+  
+    .ul-first {
+      font-size : 20px;
+      margin-left:300px
+    }
+    .ul-sec {
+      font-size:20px;
+      float:right;
+      margin-right  :250px;
+    }
+    .footer {
+        position: fixed;
+        height: 50px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        margin-bottom: 0px;
+    }
+
+    input[type=text], select, textarea {
+        width: 60%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: vertical;
+      }
+      
+      label {
+        padding: 12px 12px 12px 0;
+        display: inline-block;
+        margin-left: 200px;
+        font-weight: bold;
+      }
+      
+      input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        float: right;
+        margin-top:25px;
+        margin-right: 600px;
+      }
+      
+      input[type=submit]:hover {
+        background-color: #fcba03;
+      }
+      
+      .container {
+        border-radius: 5px;
+        padding: 20px;
+      }
+      
+      .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+      }
+      
+      .col-75 {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .col-25, .col-75, input[type=submit] {
+          width: 100%;
+          margin-top: 0;
+        }
+      }
+      
+    div.transbox {
+      margin: 30px;
+      margin-left: 475px;
+      width: 300px;
+      background-color: #ffffff;
+      border: 1px solid black;
+      opacity: 0.8;
+      border-radius: 25px;
+border: 2px solid goldenrod;
+    }
+    
+    div.transbox p {
+      margin: 5%;
+      font-weight: bold;
+      color: #000000;
+    }
+
+   .box {
+      margin: 30px;
+      background-color: #ffffff;
+      border: 1px solid black;
+      opacity: 0.8;
+      border-radius: 25px;
+border: 2px solid goldenrod;
+    }
+    
+    .box p {
+      margin: 5%;
+      font-weight: bold;
+      color: #000000;
+    }

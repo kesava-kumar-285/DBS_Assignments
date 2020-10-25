@@ -1,0 +1,62 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  /*height: 70px;*/
+  margin-bottom: 130px;
+}
+
+li {
+  float: left;
+  display: inline;
+  align-content: left;
+
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: white;
+}
+
+.img1{
+    height: 50px;
+    width: 150px;
+    border-radius: 30px;
+    margin-right: 900px;
+}
+
+.img2{
+    height:300px;
+}
+
+.main_footer{
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0px;
+}
+
+
+.combine {
+    background-image: url("https://miro.medium.com/max/3840/1*U18aWqq2322t8Z26zZ0SIg.jpeg");
+    min-height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 10px;
+    position: relative;
+    
+}

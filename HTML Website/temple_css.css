@@ -1,0 +1,225 @@
+
+html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+}
+ 
+body {
+      font-family: "Helvetica Neue",sans-serif;
+      font-weight: lighter;
+}
+
+header {
+      width: 100%;
+      height: 80vh;
+      background: url(6.jpg) no-repeat 100% 100%;
+      background-size: cover;
+
+}
+ 
+#right {
+      width: 30%;
+      margin: 4em auto;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: justify;
+      float: right;
+      margin-right:180px;
+      /*margin-top: -10px;*/
+
+}
+#left{
+      width: 30%;
+      margin: 4em auto;
+      font-size: 18px;
+      line-height: 30px;
+      text-align: justify;
+      float: left;
+      margin-left:100px;
+      font-family: "Alan Hand Regular";
+} 
+#down{
+      width: 30%;
+      margin: 4em auto;
+      font-size: 18px;
+      line-height: 30px;
+      text-align: justify;
+      float: left;
+      margin-left:100px;
+      font-family: "Alan Hand Regular";
+} 
+.logo {
+      line-height: 60px;
+      position: fixed;
+      float: left;
+      margin: 16px 40px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      letter-spacing: 2px;
+}
+
+nav {
+      position: fixed;
+      width: 100%;
+      line-height: 60px;
+}
+ 
+nav ul {
+      line-height: 60px;
+      list-style: none;
+      background: rgba(0, 0, 0, 0);
+      overflow: hidden;
+      color: #fff;
+      padding: 0;
+      text-align: right;
+      margin: 0;
+      padding-right: 40px;
+      transition: 1s;
+}
+ 
+nav.black ul {
+      background: #000;
+}
+ 
+nav ul li {
+      display: inline-block;
+      padding: 16px 40px;;
+}
+ 
+nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+}
+ 
+.menu-icon {
+      line-height: 60px;
+      width: 100%;
+      background: #000;
+      text-align: right;
+      box-sizing: border-box;
+      padding: 15px 24px;
+      cursor: pointer;
+      color: #fff;
+      display: none;
+}
+ 
+@media(max-width: 786px) {
+ 
+      .logo {
+            position: fixed;
+            top: 0;
+            margin-top: 8px;
+      }
+ 
+      nav ul {
+            max-height: 0px;
+            background: #000;
+      }
+ 
+      nav.black ul {
+            background: #000;
+      }
+ 
+      .showing {
+            max-height: 34em;
+      }
+ 
+      nav ul li {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 24px;
+            text-align: center;
+      }
+ 
+      .menu-icon {
+            display: block;
+      }
+ 
+}
+img {
+  border-radius:80%;
+  width: 80px;
+  height: 80px;
+}
+.w3-container:after,.w3-container:before{
+      content:"";
+      display:table;
+      clear:both
+}
+.w3-container{
+      padding:0.01em 16px
+}
+.w3-card-4,.w3-hover-shadow:hover{
+      box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)
+}
+.w3-center .w3-bar{display:inline-block;width:auto}
+.w3-center .w3-bar-item{text-align:center}
+.button1{
+      font-size: 20px;
+      /*margin-left: 300px;*/
+      text-decoration: none;
+      color: green;
+      border: #926239 1px solid;
+      padding: 10px 20px;
+      border-radius: 10px;
+      margin-left: 800px;
+      cursor: pointer;
+      margin-top: 10px;
+      
+
+}
+
+.buttons{
+      display: grid;
+      grid-template-areas: "button1 button2 button3";
+}
+
+.button1:hover,.button2:hover,.button3:hover{
+      background: red;
+      color: #fff;
+
+}
+
+
+
+
+showcase h1{
+      margin-top: 5%;
+      margin-bottom: 5%;
+      text-align: center;
+  }
+  
+  #courses{
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      margin-top: -400px;
+  }
+  
+  #courses img{
+      width: 200px;
+      border-radius: 10px;
+      border: 2px solid #000;
+      margin: auto;
+  }
+  
+  .apply{
+      margin-top: 4%;
+      background-color: orangered;
+      padding: 0.7rem 1rem;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+  }
+  
+  footer{
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1.2rem;
+      margin-top: 4%;
+  }
+  
