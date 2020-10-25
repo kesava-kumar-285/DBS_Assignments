@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <beans xmlns = "http://www.springframework.org/schema/beans"  
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"  
+     xmlns:context = "http://www.springframework.org/schema/context"  
+       xsi:schemaLocation = "http://www.springframework.org/schema/beans  
+         http://www.springframework.org/schema/beans/spring-beans.xsd  
+           http://www.springframework.org/schema/context 
+              http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+
+                        
+                   <bean id="flight" class="Flight">
+                   </bean>
+                   
+                 <bean id="scope" class="Scope" scope="singleton">
+                   </bean>  
+                   
+                   <bean id="elec" class="Electric" scope="singleton"></bean>
+                   
+                   <bean id="train" class="Train" scope="prototype"></bean>
+                   
+                   <bean id="satellite" class="Satellite" init-method="init" destroy-method="destroy">      
+                   <property name="name" value="Chandrayan"/>
+                   <property name="fueltype" value="GAS"/>
+                   </bean>
+                   
+                   <bean id="basecar" class="Car">
+                   		<property name="cost" value="5000000"/>
+                   </bean>
+                   
+                   <bean id="bmwcar" class="BMW" parent="basecar">
+                   		<property name="name" value="BMW Car"/>
+                   		<property name="features" value="Automatic Driving"/>
+                   </bean>
+                   
+                    <bean id="mercar" class="Mercedez" parent="basecar">
+                   		<property name="name" value="Mercedez"/>
+                   		<property name="features" value="Autogear"/>
+                   </bean>
+</beans>

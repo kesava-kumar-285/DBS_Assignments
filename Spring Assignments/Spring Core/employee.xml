@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <beans xmlns = "http://www.springframework.org/schema/beans"  
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"  
+     xmlns:context = "http://www.springframework.org/schema/context"  
+       xsi:schemaLocation = "http://www.springframework.org/schema/beans  
+         http://www.springframework.org/schema/beans/spring-beans.xsd  
+           http://www.springframework.org/schema/context 
+              http://www.springframework.org/schema/context/spring-context.xsd">
+              
+              
+              <bean id="employee" class="Employee">
+              			<property name="department" ref="department"/>
+              			<property name="empId" value="101"/>
+              			<property name="name" value="Bruno Marz"/>
+              			<property name="dept" value = "Technology"/>
+              			
+            
+              </bean>
+              
+           
+              <bean id="department" class="dependencyinjection.Department"></bean>
+              
+              
+              <bean id="system" class="assignment.Systems">
+                       <property name="processor" ref="processor"/>
+                       <property name="model_no" value="865"/>
+                       <property name="brand" value="Samsung"/>
+                       <property name="cost" value="70000"/>
+              
+              </bean>
+              
+              <bean id="processor" class="assignment.Processor">
+              <property name="speed" value="10"/>
+              <property name="type"  value="Octacore"/>
+  
+              </bean>
+              
+              
+              
+              
+              
+              
+  </beans>

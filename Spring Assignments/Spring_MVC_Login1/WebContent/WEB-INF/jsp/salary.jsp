@@ -1,0 +1,1 @@
+Salary : ${net_salary}
